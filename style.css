@@ -93,8 +93,8 @@ body{
   }
 #about{
     height: 100vh;
-    background:rgb(158, 158, 158);
-    color: #ffffff;
+    background: #eeeeee;
+    color: #5a5a5a;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -113,9 +113,12 @@ body{
     height: 25%;
     width: 60%;
     text-align: center;
-    
-    border-bottom: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .black{
     color: black;
 }
@@ -152,4 +155,8 @@ body{
         background-position-x: center;
         background-position-y: center;
     }
+}
+hr{
+    color: black;
+    width: 100%;
 }
