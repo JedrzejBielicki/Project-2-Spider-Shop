@@ -80,6 +80,10 @@ body{
     font-weight: 800;
 }
 
+.header-none{
+    display: none;
+}
+
 @keyframes slide-in-left {
     0% {
         transform: translateX(-1000px);
