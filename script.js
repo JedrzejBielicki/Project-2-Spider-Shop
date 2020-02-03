@@ -22,4 +22,6 @@ document.addEventListener('scroll', function (){
     else{
         header.classList.remove('header-none');
     }
-})
+});
+
+
