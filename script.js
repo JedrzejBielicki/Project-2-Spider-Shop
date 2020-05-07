@@ -12,7 +12,9 @@ window.addEventListener("scroll", function () {
 let hero = document.querySelector(".hero");
 let header = document.querySelector(".header");
 let height = hero.clientHeight;
-
+let abc = 20;
+let heightAbout = hero.clientHeight - abc;
+let navbar = document.querySelectorAll(".nav-item-link");
 
 
 document.addEventListener('scroll', function (){
@@ -21,6 +23,21 @@ document.addEventListener('scroll', function (){
     }
     else{
         header.classList.remove('header-none');
+    }
+});
+document.addEventListener('scroll', function (){
+    if(scrollY > heightAbout){
+        for( let i = 0; i < navbar.length; i++){
+            navbar[i].classList.add('navbar-about');  
+        
+        }
+        
+    }
+    else{
+        for( let i = 0; i < navbar.length; i++){
+            navbar[i].classList.remove('navbar-about');  
+            
+        }
     }
 });
 
