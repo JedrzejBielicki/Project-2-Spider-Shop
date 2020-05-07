@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .nav-item-link{
     text-decoration: none;
@@ -101,26 +102,62 @@ body{
     color: #5a5a5a;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.about h2{
-    font-weight: 500;
-}
-.about-header{
+    position: relative;
+    overflow: hidden;
+    }
+.about-main-header h2{
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
 }
+.about-main-header h2::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid #5a5a5a;
+    bottom: 0;
+    left: 0;
+}
+
 .about-box{
     height: 25%;
     width: 60%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-header:after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid #5a5a5a;
+    bottom: 0;
+    right: 0;
+}
+.about-box:nth-of-type(2){
+    height: 25%;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-box:nth-of-type(3){
+    height: 25%;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .black{
@@ -158,10 +195,7 @@ body{
         background-position-y: center;
     }
 }
-hr{
-    color: black;
-    width: 100%;
-}
+
 .gallery{
     min-height: 100vh;
     width: 100%;
