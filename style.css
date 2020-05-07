@@ -124,12 +124,23 @@ body{
     left: 0;
 }
 
-.about-box{
+.about-box-who{
     height: 25%;
     width: 60%;
     text-align: center;
     position: absolute;
-    top: 60%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-box-who p{
+    position: absolute;
+    bottom: 0;
+}
+.about-header{
+    position: absolute;
+    top: 0;
+    margin: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -141,23 +152,40 @@ body{
     bottom: 0;
     right: 0;
 }
-.about-box:nth-of-type(2){
+.about-header:after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid #5a5a5a;
+    bottom: 0;
+    left: 0;
+}
+
+.about-box-why{
     height: 25%;
     width: 60%;
     text-align: center;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
 }
-.about-box:nth-of-type(3){
+.about-box-why p{
+    position: absolute;
+    bottom: 0;
+}
+.about-box-what{
     height: 25%;
     width: 60%;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
+}
+.about-box-what p{
+    position: absolute;
+    bottom: 0;
 }
 
 .black{
