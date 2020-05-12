@@ -16,6 +16,7 @@ let abc = 20;
 let heightAbout = hero.clientHeight - abc;
 let navbar = document.querySelectorAll(".nav-item-link");
 
+console.log(height);
 
 document.addEventListener('scroll', function (){
     if(scrollY > height){

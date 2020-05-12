@@ -21,6 +21,7 @@ body{
 .title{
     /* animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
     position: absolute;
+    
 }
 
 .navbar{
@@ -30,7 +31,7 @@ body{
     color: #e6e6e6;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
     animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     z-index: 1;
@@ -75,9 +76,9 @@ body{
 .hero{
     background: url("spider.jpg");
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .header{
     color: #e6e6e6;
@@ -87,7 +88,9 @@ body{
     padding-left: 20px;
     padding-top: 150px;
     font-weight: 800;
-    overflow: hidden;
+    
+    height: 100vh;
+    position: relative;
 }
 
 .header-none{
@@ -203,6 +206,11 @@ body{
     color: black;
 }
 
+@media (max-width: 400px){
+    #about{
+        font-size: .7rem;
+    }
+}
 @media (max-width: 600px){
     .nav-list{
         display: none;
@@ -218,6 +226,11 @@ body{
     }
     .about-box-what h2{
         display: none;
+    }
+    .nav-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 @media (max-height: 500px){
